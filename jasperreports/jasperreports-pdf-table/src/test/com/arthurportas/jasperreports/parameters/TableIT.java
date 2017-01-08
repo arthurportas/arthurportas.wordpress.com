@@ -4,18 +4,13 @@ import com.arthurportas.jasperreports.order.OrderItem;
 import com.google.common.collect.Lists;
 import net.sf.jasperreports.engine.*;
 import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
-import org.apache.commons.io.IOUtils;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.imageio.ImageIO;
 import java.io.*;
-import java.net.URISyntaxException;
-import java.net.URL;
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -70,7 +65,7 @@ public class TableIT {
 
         OrderItem orderItem = new OrderItem();
         orderItem.setRowNumber("1");
-        orderItem.setProductName("iPhone 7");
+        orderItem.setProductName("iPhone \n 7");
         orderItem.setSellerSku("sellerSKU");
         orderItem.setShopSku("shopSKU");
         orderItem.setPrice("600");

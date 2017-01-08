@@ -36,12 +36,26 @@
 						<jr:tableHeader height="30" rowSpan="1">
 							<textField>
 								<reportElement x="0" y="0" width="90" height="30" uuid="e6ae6d73-8154-4ada-ad4b-34fd626e8db0"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
 								<textFieldExpression><![CDATA["#"]]></textFieldExpression>
 							</textField>
 						</jr:tableHeader>
 						<jr:detailCell height="30" rowSpan="1">
 							<textField>
 								<reportElement x="0" y="0" width="90" height="30" uuid="3c12cb3e-62b2-4a44-8600-c076b6bc6566"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
 								<textFieldExpression><![CDATA[$F{rowNumber}]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
@@ -50,12 +64,26 @@
 						<jr:tableHeader height="30" rowSpan="1">
 							<textField>
 								<reportElement x="0" y="0" width="90" height="30" uuid="4a4e97cc-f222-42d1-a2a8-697144769412"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
 								<textFieldExpression><![CDATA["Product name"]]></textFieldExpression>
 							</textField>
 						</jr:tableHeader>
 						<jr:detailCell height="30" rowSpan="1">
 							<textField>
 								<reportElement x="0" y="0" width="90" height="30" uuid="62644ea6-b9da-48a3-b72f-e67a06d48fa5"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
 								<textFieldExpression><![CDATA[$F{productName}]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
@@ -64,12 +92,26 @@
 						<jr:tableHeader height="30" rowSpan="1">
 							<textField>
 								<reportElement x="0" y="0" width="90" height="30" uuid="a76ec155-c737-4d41-a16c-74287380e0d3"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
 								<textFieldExpression><![CDATA["Seller SKU"]]></textFieldExpression>
 							</textField>
 						</jr:tableHeader>
 						<jr:detailCell height="30" rowSpan="1">
 							<textField>
 								<reportElement x="0" y="0" width="90" height="30" uuid="52a5a92d-81ac-4d19-8c2c-1f0d9e726d4c"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
 								<textFieldExpression><![CDATA[$F{sellerSku}]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
@@ -78,12 +120,26 @@
 						<jr:tableHeader height="30" rowSpan="1">
 							<textField>
 								<reportElement x="0" y="0" width="90" height="30" uuid="a69e502e-a5d6-4e82-861b-1cefb61c12f8"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
 								<textFieldExpression><![CDATA["Shop SKU"]]></textFieldExpression>
 							</textField>
 						</jr:tableHeader>
 						<jr:detailCell height="30" rowSpan="1">
 							<textField>
 								<reportElement x="0" y="0" width="90" height="30" uuid="c123308c-d0fb-46ea-b6e5-aaa640b358bf"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
 								<textFieldExpression><![CDATA[$F{shopSku}]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
@@ -92,6 +148,13 @@
 						<jr:tableHeader height="30" rowSpan="1">
 							<textField>
 								<reportElement x="0" y="0" width="90" height="30" uuid="0e1a8cf0-8569-4e20-8cd5-77ab4e5e117a"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
 								<textFieldExpression><![CDATA["Price"]]></textFieldExpression>
 							</textField>
 						</jr:tableHeader>
@@ -101,6 +164,13 @@
 						<jr:detailCell height="30" rowSpan="1">
 							<textField>
 								<reportElement x="0" y="0" width="90" height="30" uuid="72ced8a8-a8b4-4310-b045-2dd0f693cd07"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
 								<textFieldExpression><![CDATA[$F{price}]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
@@ -109,6 +179,13 @@
 						<jr:tableHeader height="30" rowSpan="1">
 							<textField>
 								<reportElement x="0" y="0" width="90" height="30" uuid="7147f73b-3c24-42fa-b914-b4c0d611bac9"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
 								<textFieldExpression><![CDATA["Paid Price"]]></textFieldExpression>
 							</textField>
 						</jr:tableHeader>
@@ -118,6 +195,13 @@
 						<jr:detailCell height="30" rowSpan="1">
 							<textField>
 								<reportElement x="0" y="0" width="90" height="30" uuid="084bea43-5af9-4234-9b7a-b529e4b75519"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
 								<textFieldExpression><![CDATA[$F{paidPrice}]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
