@@ -1,0 +1,36 @@
+{
+  "user": {
+    "data": [
+      {
+        "id": "119bbacd-9c03-4044-867f-4c26e8f715f6",
+        "firstName": "Arthur",
+        "lastName": "Portas",
+        "email": "arthurportas[AT]gmail.com"
+      },
+      {
+        "id": "f0f45a6f-77af-44a6-b872-8ee139534afb",
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "jondoe[AT]gmail.com"
+      },
+      {
+        "id": "a85e5ed7-1a63-4bd9-b460-0ecb0cc1327e",
+        "firstName": "Pamela",
+        "lastName": "Anderson",
+        "email": "pamelaanderson[AT]gmail.com"
+      },
+      {
+        "id": "6d876643-c60b-4fd9-a7ae-be4df2b0d466",
+        "firstName": "Soraia",
+        "lastName": "Chaves",
+        "email": "soraiachaves[AT]gmail.com"
+      },
+      {
+        "id": "2a734390-673f-490a-aed1-c0bb580847a6",
+        "firstName": "Ines",
+        "lastName": "Branco",
+        "email": "inesbranco[AT]gmail.com"
+      }
+    ]
+  }
+}
