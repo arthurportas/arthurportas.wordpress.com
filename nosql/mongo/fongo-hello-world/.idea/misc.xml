@@ -68,6 +68,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../fongo-scheduled-job/pom.xml" />
       </list>
     </option>
   </component>

@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="fongo-hello-world" />
+        <module name="fongo-scheduled-job" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="fongo-hello-world" target="1.8" />
+      <module name="fongo-scheduled-job" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
