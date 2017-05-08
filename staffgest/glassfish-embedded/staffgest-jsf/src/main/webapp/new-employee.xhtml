@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <head>
+        <title>::StaffGest:: - new-employee</title>
+    </head>
+    <body>
+        <h:form>
+            First name:
+            <h:inputText value="#{employeeBean.firstName}"></h:inputText>
+
+            Last name:
+            <h:inputText value="#{employeeBean.lastName}"></h:inputText>
+            <h:commandButton value="Submit" action="#{employeeBean.save}"></h:commandButton>
+        </h:form>
+    </body>
+</html>

@@ -29,7 +29,7 @@ public class EmployeeController extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         String firstName = req.getParameter("firstName");
-        String lastName = req.getParameter("firstName");
+        String lastName = req.getParameter("lastName");
 
         Employee employee = new Employee();
         employee.setFirstName(firstName);
