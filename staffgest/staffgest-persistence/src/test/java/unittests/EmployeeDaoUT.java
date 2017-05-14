@@ -24,72 +24,72 @@ public class EmployeeDaoUT {
     @Test
     public void saveEmployee_returnsEntityNotNull_success() {
 
-        EmployeeDaoCustom employeeDaoCustom = new EmployeeDaoImpl();
-        Employee entity = employeeDaoCustom.save(getEmployee());
+        EmployeeDaoImpl employeeDao = new EmployeeDaoImpl();
+        Employee entity = employeeDao.save(getEmployee());
         Assert.assertNotNull(entity);
     }
 
     @Test
     public void saveEmployee_returnsEntityWithId_success() {
 
-        EmployeeDaoCustom employeeDaoCustom = new EmployeeDaoImpl();
-        Employee entity = employeeDaoCustom.save(getEmployee());
+        EmployeeDaoImpl employeeDao = new EmployeeDaoImpl();
+        Employee entity = employeeDao.save(getEmployee());
         Assert.assertNotNull(entity.getId());
     }
 
     @Test
     public void saveEmployee_returnsEntityWithFirstNameNotNull_success() {
 
-        EmployeeDaoCustom employeeDaoCustom = new EmployeeDaoImpl();
-        Employee entity = employeeDaoCustom.save(getEmployee());
+        EmployeeDaoImpl employeeDao = new EmployeeDaoImpl();
+        Employee entity = employeeDao.save(getEmployee());
         Assert.assertNotNull(entity.getFirstName());
     }
 
     @Test
     public void saveEmployee_returnsEntityWithFirstName_success() {
 
-        EmployeeDaoCustom employeeDaoCustom = new EmployeeDaoImpl();
+        EmployeeDaoImpl employeeDao = new EmployeeDaoImpl();
         Employee employee = getEmployee();
-        Employee entity = employeeDaoCustom.save(employee);
+        Employee entity = employeeDao.save(employee);
         Assert.assertEquals(employee.getFirstName(), entity.getFirstName());
     }
 
     @Test
     public void saveEmployee_returnsEntityWithLastNameNotNull_success() {
 
-        EmployeeDaoCustom employeeDaoCustom = new EmployeeDaoImpl();
-        Employee entity = employeeDaoCustom.save(getEmployee());
+        EmployeeDaoImpl employeeDao = new EmployeeDaoImpl();
+        Employee entity = employeeDao.save(getEmployee());
         Assert.assertNotNull(entity.getLastName());
     }
 
     @Test
     public void saveEmployee_returnsEntityWithLastName_success() {
 
-        EmployeeDaoCustom employeeDaoCustom = new EmployeeDaoImpl();
+        EmployeeDaoImpl employeeDao = new EmployeeDaoImpl();
         Employee employee = getEmployee();
-        Employee entity = employeeDaoCustom.save(employee);
+        Employee entity = employeeDao.save(employee);
         Assert.assertEquals(employee.getLastName(), entity.getLastName());
     }
 
     @Test
     public void updateEmployee_returnsEntityWithFirstNameUpdated_success() {
 
-        EmployeeDaoCustom employeeDaoCustom = new EmployeeDaoImpl();
-        Employee entity = employeeDaoCustom.save(getEmployee());
+        EmployeeDaoImpl employeeDao = new EmployeeDaoImpl();
+        Employee entity = employeeDao.save(getEmployee());
 
         entity.setFirstName("foo");
-        employeeDaoCustom.update(entity);
+        employeeDao.update(entity);
         Assert.assertEquals("foo", entity.getFirstName());
     }
 
     @Test
     public void searchEmployeeByPattern_returnsEntity_success() {
 
-        EmployeeDaoCustom employeeDaoCustom = new EmployeeDaoImpl();
-        Employee entity = employeeDaoCustom.save(getEmployee());
+        EmployeeDaoImpl employeeDao = new EmployeeDaoImpl();
+        Employee entity = employeeDao.save(getEmployee());
         String firstName = entity.getFirstName();
 
-        Assert.assertNotNull(employeeDaoCustom.findByName(StringUtils.substring(firstName, firstName.length() > 3 ? 3 : 1)));
+        Assert.assertNotNull(employeeDao.findByName(StringUtils.substring(firstName, firstName.length() > 3 ? 3 : 1)));
     }
 
     private Employee getEmployee() {

@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Created by arthurportas on 10/05/2017.
  */
-public interface EmployeeDaoCustom extends GenericDao<Employee> {
+public interface EmployeeDaoCustom<Employee> {
 
     List<Employee> findByName(String pattern);
 

@@ -7,22 +7,7 @@ import java.util.List;
 /**
  * Created by arthurportas on 10/05/2017.
  */
-public class EmployeeDaoImpl extends GenericDaoImpl implements EmployeeDaoCustom {
-
-    public Employee save(Employee entity) {
-         getEntityManager().persist(entity);
-         return entity;
-    }
-
-    @Override
-    public void delete(Employee entity) {
-        getEntityManager().remove(entity);
-    }
-
-    @Override
-    public Employee update(Employee entity) {
-        return getEntityManager().merge(entity);
-    }
+public class EmployeeDaoImpl extends GenericDaoImpl<Employee> implements EmployeeDaoCustom<Employee>  {
 
     @Override
     public List<Employee> findByName(String pattern) {
