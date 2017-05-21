@@ -17,31 +17,36 @@ import java.net.URL;
  */
 public class App {
 
-    private static final String warName = "staffgest-mvc-jsp";
-    private static final int portNumber = 8080;
+    private static final String WAR_NAME = "staffgest-mvc-jsp";
+
+    private static final int PORT_NUMBER = 8080;
+
     private GlassFish glassfish;
+
     private Deployer deployer;
 
     protected void setUp() throws Exception {
+
         GlassFishProperties props = new GlassFishProperties();
-        props.setPort("http-listener", portNumber);
+        props.setPort("http-listener", PORT_NUMBER);
         glassfish = GlassFishRuntime.bootstrap().newGlassFish(props);
         glassfish.start();
         glassfish.getDeployer();
         deployer = glassfish.getDeployer();
-        ScatteredArchive archive = new ScatteredArchive(warName, ScatteredArchive.Type.WAR, new File("src/main/webapp"));
+        ScatteredArchive archive = new ScatteredArchive(WAR_NAME, ScatteredArchive.Type.WAR, new File("src/main/webapp"));
         archive.addClassPath(new File("target", "classes"));
         deployer.deploy(archive.toURI());
     }
 
     protected void tearDown() throws Exception {
-        deployer.undeploy(warName);
+
+        deployer.undeploy(WAR_NAME);
         glassfish.dispose();
     }
 
     protected void test(String[] names) throws Exception {
 
-        URL url = new URL("http://localhost:" + portNumber + "/" + warName + "/new-employee.html");
+        URL url = new URL("http://localhost:" + PORT_NUMBER + "/" + WAR_NAME + "/new-employee.html");
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
         BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
         System.out.println("Request url: " + url);
@@ -56,7 +61,7 @@ public class App {
     public static void main(String[] args) throws Exception {
         App app = new App();
         app.setUp();
-      //  app.test(args);
-      //  app.tearDown();
+        //  app.test(args);
+        //  app.tearDown();
     }
 }

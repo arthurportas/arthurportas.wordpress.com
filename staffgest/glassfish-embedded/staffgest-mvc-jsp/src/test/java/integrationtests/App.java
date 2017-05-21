@@ -1,4 +1,4 @@
-package com.arthurportas.presentation;
+package integrationtests;
 
 import org.glassfish.embeddable.Deployer;
 import org.glassfish.embeddable.GlassFish;
@@ -42,20 +42,6 @@ public class App {
 
         deployer.undeploy(WAR_NAME);
         glassfish.dispose();
-    }
-
-    protected void test(String[] names) throws Exception {
-
-        URL url = new URL("http://localhost:" + PORT_NUMBER + "/" + WAR_NAME + "/new-employee.html");
-        HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-        BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
-        System.out.println("Request url: " + url);
-        String line = null;
-        while ((line = in.readLine()) != null) {
-            System.out.println(line);
-        }
-        in.close();
-        conn.disconnect();
     }
 
     public static void main(String[] args) throws Exception {
