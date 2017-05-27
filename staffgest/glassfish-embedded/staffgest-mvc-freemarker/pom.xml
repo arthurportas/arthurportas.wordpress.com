@@ -1,0 +1,76 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.arthurportas</groupId>
+    <artifactId>staffgest-mvc-freemarker</artifactId>
+    <packaging>war</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <!--plugins-->
+        <exec-maven-plugin.version>1.2.1</exec-maven-plugin.version>
+        <!--dependencies-->
+        <staffgest-mdw.version>1.0-SNAPSHOT</staffgest-mdw.version>
+        <glassfish-embedded-all.version>4.1.2</glassfish-embedded-all.version>
+        <freemarker.version>2.3.23</freemarker.version>
+        <junit.version>3.8.1</junit.version>
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.arthurportas</groupId>
+            <artifactId>staffgest-mdw</artifactId>
+            <version>${staffgest-mdw.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.glassfish.main.extras</groupId>
+            <artifactId>glassfish-embedded-all</artifactId>
+            <version>${glassfish-embedded-all.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.freemarker/freemarker -->
+        <dependency>
+            <groupId>org.freemarker</groupId>
+            <artifactId>freemarker</artifactId>
+            <version>${freemarker.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+    <build>
+        <finalName>staffgest-mvc-freemarker</finalName>
+
+        <plugins>
+
+            <!--run mvn clean install exec:java-->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>${exec-maven-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <mainClass>com.arthurportas.presentation.App</mainClass>
+                </configuration>
+            </plugin>
+
+        </plugins>
+
+    </build>
+</project>
